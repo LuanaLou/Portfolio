@@ -78,15 +78,22 @@ body * {
   right: 0;
   z-index: 1;
   transform: translateY(-50%);
-
-animation: slide-back 0.2s;
 }
 
-.light #switch button {
+/* Add animation classes to be toggled via JS */
+#switch button.slide-back {
+  animation: slide-back 0.2s;
+}
+
+#switch button.slide-in {
   animation: slide-in 0.4s forwards;
 }
 
-#switch button: hover {
+/* .light #switch button {
+  animation: slide-in 0.4s forwards;
+} */
+
+#switch button :hover {
   outline: 8px solid var(--highlight-color);
 }
 #switch span {
